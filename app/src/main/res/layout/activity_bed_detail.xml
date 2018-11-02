@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#E1BEE7"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E1BEE7"
+        android:orientation="vertical"
+        tools:context=".BedDetail">
+
+        <TextView
+            android:id="@+id/BedNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bed_no"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/PatientName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/patient_name"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/age"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvDocName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/last_updated_by"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvUpdated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="updated at"
+            android:textColor="#000" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <TextView
+            android:id="@+id/tvProvdiag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/provisional_diagno"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/etProvDiag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/BasicDiet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/basic_diet" />
+
+        <Spinner
+            android:id="@+id/spBasicDiet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/basic_diet_arrays" />
+
+        <TextView
+            android:id="@+id/tvSubDiet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sub_diet" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbDD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dd" />
+
+            <CheckBox
+                android:id="@+id/cbSRD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="@string/srd" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbHPD"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/hpd" />
+
+            <CheckBox
+                android:id="@+id/cbLPD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/lpd" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbRD"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="RD" />
+
+            <CheckBox
+                android:id="@+id/cbSF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/salt_free" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbBLAND"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/bland" />
+
+            <CheckBox
+                android:id="@+id/cbFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/fat_free" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbCD"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/colddiet" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/DietRemark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_diet_remark"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/etDietRemark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onBack"
+                android:text="Back" />
+
+            <Button
+                android:id="@+id/btnUpdateDiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onUpdate"
+                android:text="@string/update" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
