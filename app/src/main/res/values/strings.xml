@@ -39,4 +39,34 @@
         <item>Soft</item>
     </string-array>
 
+    <string-array name="meal_time_array">
+        <item>All</item>
+        <item>Morning</item>
+        <item>Afternoon</item>
+        <item>Evening</item>
+        <item>Night</item>
+    </string-array>
+
+    <string-array name="meal_item_array">
+        <item>Chai</item>
+        <item>Lassi</item>
+        <item>Roti</item>
+        <item>Khichdi</item>
+        <item>Dahi</item>
+        <item>Dal</item>
+        <item>Soup</item>
+        <item>Biscuits</item>
+        <item>Thsli</item>
+        <item>Rice</item>
+        <item>Juice</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="meal_quantity_array">
+        <item>One</item>
+        <item>Half</item>
+        <item>Two</item>
+        <item>One and Half</item>
+    </string-array>
+
 </resources>

@@ -25,7 +25,8 @@
         <activity android:name=".Bed" />
         <activity android:name=".ChargeClass" />
         <activity android:name=".BedDetail" />
-        <activity android:name=".HomePage"></activity>
+        <activity android:name=".HomePage" />
+        <activity android:name=".MenuActivity"></activity>
     </application>
 
 </manifest>

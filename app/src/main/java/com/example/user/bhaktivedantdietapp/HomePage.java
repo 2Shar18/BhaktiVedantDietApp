@@ -57,10 +57,13 @@ public class HomePage extends AppCompatActivity {
     }
 
     public void logout(View view) {
-        SharedPreferences.Editor editor = pref.edit();
-        editor.clear();
-        editor.apply();
-        finish();
+//        SharedPreferences.Editor editor = pref.edit();
+//        editor.clear();
+//        editor.apply();
+//        finish();
+
+        startActivity(new Intent(getApplicationContext(), MenuActivity.class));
+
     }
 
     public void selectByFloor(View view) {
